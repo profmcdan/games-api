@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres:12.1-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: game-user
+      POSTGRES_PASSWORD: somePassw0!d
+      POSTGRES_DB: GamesDB
+    ports:
+      - 5433:5432
+
+volumes:
+  postgres_data: ~
