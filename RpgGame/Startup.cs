@@ -56,9 +56,10 @@ namespace RpgGame
             });
             
             services.AddScoped<ICharacterRepository, CharacterRepository>();
+            services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddAutoMapper(typeof(Startup));
             
-            services.AddDbContext<GameContext>(options =>
+            services.AddDbContext<DataContext>(options =>
             {
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
             });

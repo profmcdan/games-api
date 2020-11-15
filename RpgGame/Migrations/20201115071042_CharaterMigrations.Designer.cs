@@ -9,7 +9,7 @@ using RpgGame.DbContexts;
 
 namespace RpgGame.Migrations
 {
-    [DbContext(typeof(GameContext))]
+    [DbContext(typeof(DataContext))]
     [Migration("20201115071042_CharaterMigrations")]
     partial class CharaterMigrations
     {

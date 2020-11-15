@@ -8,14 +8,20 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="AuthController.cs" t="Include" />
           <e p="CharacterController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="DbContexts" t="Include">
-          <e p="GameContext.cs" t="Include" />
+          <e p="DataContext.cs" t="Include" />
         </e>
         <e p="docker-compose.yml" t="Include" />
         <e p="DTOs" t="Include">
+          <e p="Auth" t="Include">
+            <e p="CreateUserDto.cs" t="Include" />
+            <e p="LoginDto.cs" t="Include" />
+            <e p="UserDto.cs" t="Include" />
+          </e>
           <e p="Character" t="Include">
             <e p="AddCharacterDto.cs" t="Include" />
             <e p="GetCharacterDto.cs" t="Include" />
@@ -23,16 +29,23 @@
           </e>
         </e>
         <e p="Helpers" t="Include">
+          <e p="Authentication.cs" t="Include" />
           <e p="ServiceResponse.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
           <e p="20201115071042_CharaterMigrations.cs" t="Include" />
           <e p="20201115071042_CharaterMigrations.Designer.cs" t="Include" />
+          <e p="20201115092218_User.cs" t="Include" />
+          <e p="20201115092218_User.Designer.cs" t="Include" />
+          <e p="20201115092700_UserCharacterRelation.cs" t="Include" />
+          <e p="20201115092700_UserCharacterRelation.Designer.cs" t="Include" />
           <e p="GameContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="Character.cs" t="Include" />
+          <e p="Roles.cs" t="Include" />
           <e p="RpgClass.cs" t="Include" />
+          <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -43,15 +56,20 @@
         </e>
         <e p="Profiles" t="Include">
           <e p="CharacterProfile.cs" t="Include" />
+          <e p="UserProfile.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
-        <e p="ResourceParameters" t="Include" />
+        <e p="ResourceParameters" t="Include">
+          <e p="LoginResource.cs" t="Include" />
+        </e>
         <e p="RpgGame.csproj" t="IncludeRecursive" />
         <e p="Services" t="Include">
+          <e p="AuthRepository.cs" t="Include" />
           <e p="CharacterRepository.cs" t="Include" />
+          <e p="IAuthRepository.cs" t="Include" />
           <e p="ICharacterRepository.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />

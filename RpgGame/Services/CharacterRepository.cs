@@ -11,9 +11,9 @@ namespace RpgGame.Services
 {
     public class CharacterRepository : ICharacterRepository, IDisposable
     {
-        private readonly GameContext _context;
+        private readonly DataContext _context;
 
-        public CharacterRepository(GameContext context)
+        public CharacterRepository(DataContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }

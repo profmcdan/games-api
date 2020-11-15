@@ -4,7 +4,28 @@
     <projectFile>RpgGame/RpgGame.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6d7f177-4cba-4b86-91ca-a339a219bd41" name="Default Changelist" comment="" />
+    <list default="true" id="b6d7f177-4cba-4b86-91ca-a339a219bd41" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RpgGame/Controllers/AuthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/DTOs/Auth/CreateUserDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/DTOs/Auth/LoginDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/DTOs/Auth/UserDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Helpers/Authentication.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Models/Roles.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Profiles/UserProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/ResourceParameters/LoginResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Services/AuthRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Services/IAuthRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RpgGame/DbContexts/GameContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/DbContexts/DataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RpgGame/Migrations/20201115071042_CharaterMigrations.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Migrations/20201115071042_CharaterMigrations.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RpgGame/Migrations/GameContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Migrations/GameContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RpgGame/Models/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Models/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RpgGame/RpgGame.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/RpgGame.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RpgGame/Services/CharacterRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Services/CharacterRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RpgGame/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Startup.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +38,6 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/RpgGame/docker-compose.yml" />
       <option value="$PROJECT_DIR$/RpgGame/Models/RpgClass.cs" />
-      <option value="$PROJECT_DIR$/RpgGame/Models/Character.cs" />
       <option value="$PROJECT_DIR$/RpgGame/DbContexts/CharacterContexts.cs" />
       <option value="$PROJECT_DIR$/RpgGame/DbContexts/CharacterContext.cs" />
       <option value="$PROJECT_DIR$/RpgGame/DbContexts/GameContext.cs" />
@@ -27,14 +47,29 @@
       <option value="$PROJECT_DIR$/RpgGame/Profiles/CharacterProfile.cs" />
       <option value="$PROJECT_DIR$/RpgGame/DTOs/Character/UpdateCharacterDto.cs" />
       <option value="$PROJECT_DIR$/RpgGame/Services/ICharacterService.cs" />
-      <option value="$PROJECT_DIR$/RpgGame/Services/ICharacterRepository.cs" />
       <option value="$PROJECT_DIR$/RpgGame/Services/CharacterService.cs" />
-      <option value="$PROJECT_DIR$/RpgGame/Services/CharacterRepository.cs" />
-      <option value="$PROJECT_DIR$/RpgGame/Startup.cs" />
       <option value="$PROJECT_DIR$/RpgGame/appsettings.json" />
       <option value="$PROJECT_DIR$/RpgGame/Program.cs" />
       <option value="$PROJECT_DIR$/RpgGame/Helpers/ServiceResponse.cs" />
       <option value="$PROJECT_DIR$/RpgGame/Controllers/CharacterController.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Models/Roles.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Migrations/GameContextModelSnapshot.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Migrations/20201115071042_CharaterMigrations.Designer.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Services/CharacterRepository.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/DbContexts/DataContext.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Models/User.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Models/Character.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Services/ICharacterRepository.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/ResourceParameters/LoginResource.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/DTOs/Auth/CreateUserDto.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/DTOs/Auth/UserDto.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Profiles/UserProfile.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Startup.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Services/IAuthRepository.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/DTOs/Auth/LoginDto.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Helpers/Authentication.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Services/AuthRepository.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Controllers/AuthController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kHjvsA74xqqlZuh6oe9U34ln0Y" />
@@ -106,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605364645987</updated>
       <workItem from="1605364652177" duration="1044000" />
-      <workItem from="1605417517451" duration="13006000" />
+      <workItem from="1605417517451" duration="21013000" />
     </task>
     <servers />
   </component>

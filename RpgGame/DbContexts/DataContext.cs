@@ -3,12 +3,13 @@ using RpgGame.Models;
 
 namespace RpgGame.DbContexts
 {
-    public class GameContext : DbContext
+    public class DataContext : DbContext
     {
-        public GameContext(DbContextOptions<GameContext> options) : base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
         
         public DbSet<Character> Characters { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
