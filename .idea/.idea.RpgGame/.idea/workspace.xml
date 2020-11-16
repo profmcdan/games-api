@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6d7f177-4cba-4b86-91ca-a339a219bd41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RpgGame/Options/SwaggerOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Controllers/FilesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Helpers/AWSS3BucketHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Models/ServiceConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Models/enums/UploadFileName.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Services/AWSS3FileService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RpgGame/Services/IAWSS3FileService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RpgGame/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RpgGame/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Controllers/CharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RpgGame/DTOs/Auth/CreateUserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/DTOs/Auth/CreateUserDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RpgGame/Helpers/Authentication.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Helpers/Authentication.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RpgGame/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RpgGame/RpgGame.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/RpgGame.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RpgGame/Services/AuthRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Services/AuthRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RpgGame/Services/IAuthRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Services/IAuthRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RpgGame/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RpgGame/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/RpgGame/appsettings.json" afterDir="false" />
     </list>
@@ -55,7 +53,6 @@
       <option value="$PROJECT_DIR$/RpgGame/DTOs/Auth/UserDto.cs" />
       <option value="$PROJECT_DIR$/RpgGame/Profiles/UserProfile.cs" />
       <option value="$PROJECT_DIR$/RpgGame/DTOs/Auth/LoginDto.cs" />
-      <option value="$PROJECT_DIR$/RpgGame/appsettings.json" />
       <option value="$PROJECT_DIR$/RpgGame/Helpers/Authentication.cs" />
       <option value="$PROJECT_DIR$/RpgGame/Services/IAuthRepository.cs" />
       <option value="$PROJECT_DIR$/RpgGame/Controllers/AuthController.cs" />
@@ -64,7 +61,16 @@
       <option value="$PROJECT_DIR$/RpgGame/Properties/launchSettings.json" />
       <option value="$PROJECT_DIR$/RpgGame/DTOs/Auth/CreateUserDto.cs" />
       <option value="$PROJECT_DIR$/RpgGame/Options/SwaggerOptions.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Models/ServiceConfiguration.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Models/enums/UploadFileName.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/appsettings.json" />
+      <option value="$PROJECT_DIR$/RpgGame/Helpers/AWSS3BucketHelper.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Services/IASWS3FileService.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Services/ASWS3FileService.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Services/IAWSS3FileService.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Services/AWSS3FileService.cs" />
       <option value="$PROJECT_DIR$/RpgGame/Startup.cs" />
+      <option value="$PROJECT_DIR$/RpgGame/Controllers/FilesController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kHjvsA74xqqlZuh6oe9U34ln0Y" />
@@ -137,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605364645987</updated>
       <workItem from="1605364652177" duration="1044000" />
-      <workItem from="1605417517451" duration="25752000" />
+      <workItem from="1605417517451" duration="32225000" />
     </task>
     <servers />
   </component>

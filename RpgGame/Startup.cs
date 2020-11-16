@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Amazon.S3;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -18,6 +19,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using RpgGame.DbContexts;
+using RpgGame.Helpers;
+using RpgGame.Models;
 using RpgGame.Services;
 
 namespace RpgGame
@@ -35,6 +38,11 @@ namespace RpgGame
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            var appSettingsSection = Configuration.GetSection("ServiceConfiguration");
+            services.AddAWSService<IAmazonS3>();
+            services.Configure<ServiceConfiguration>(appSettingsSection);
+            services.AddTransient<IAWSS3FileService, AWSS3FileService>();
+            services.AddTransient<IAWSS3BucketHelper, AWSS3BucketHelper>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo

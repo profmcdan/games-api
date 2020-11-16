@@ -10,6 +10,7 @@
         <e p="Controllers" t="Include">
           <e p="AuthController.cs" t="Include" />
           <e p="CharacterController.cs" t="Include" />
+          <e p="FilesController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="DbContexts" t="Include">
@@ -28,8 +29,10 @@
             <e p="UpdateCharacterDto.cs" t="Include" />
           </e>
         </e>
+        <e p="Files" t="Include" />
         <e p="Helpers" t="Include">
           <e p="Authentication.cs" t="Include" />
+          <e p="AWSS3BucketHelper.cs" t="Include" />
           <e p="ServiceResponse.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
@@ -43,8 +46,12 @@
         </e>
         <e p="Models" t="Include">
           <e p="Character.cs" t="Include" />
+          <e p="enums" t="Include">
+            <e p="UploadFileName.cs" t="Include" />
+          </e>
           <e p="Roles.cs" t="Include" />
           <e p="RpgClass.cs" t="Include" />
+          <e p="ServiceConfiguration.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -71,8 +78,10 @@
         <e p="RpgGame.csproj" t="IncludeRecursive" />
         <e p="Services" t="Include">
           <e p="AuthRepository.cs" t="Include" />
+          <e p="AWSS3FileService.cs" t="Include" />
           <e p="CharacterRepository.cs" t="Include" />
           <e p="IAuthRepository.cs" t="Include" />
+          <e p="IAWSS3FileService.cs" t="Include" />
           <e p="ICharacterRepository.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
