@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RpgGame.DTOs.Character;
 using RpgGame.Helpers;
@@ -10,6 +11,7 @@ using RpgGame.Services;
 
 namespace RpgGame.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/v1/characters")]
     public class CharacterController : ControllerBase

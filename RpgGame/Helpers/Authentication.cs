@@ -1,7 +1,10 @@
+using RpgGame.Models;
+
 namespace RpgGame.Helpers
 {
     public class Authentication
     {
+
         public void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
             using (var hmac = new System.Security.Cryptography.HMACSHA512())

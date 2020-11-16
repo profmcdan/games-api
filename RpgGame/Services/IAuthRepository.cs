@@ -18,5 +18,6 @@ namespace RpgGame.Services
         void DeleteUser(User user);
         bool UserExists(string email);
         bool Save();
+        public string CreateToken(User user);
     }
 }

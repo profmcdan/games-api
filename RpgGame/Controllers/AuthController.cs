@@ -95,7 +95,7 @@ namespace RpgGame.Controllers
 
             response.Data = new LoginDto()
             {
-                AccessToken = "Access",
+                AccessToken = _authRepository.CreateToken(user),
                 RefreshToken = "Refresh",
                 UserId = user.Id
             };

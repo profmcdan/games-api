@@ -54,6 +54,9 @@
             </e>
           </e>
         </e>
+        <e p="Options" t="Include">
+          <e p="SwaggerOptions.cs" t="Include" />
+        </e>
         <e p="Profiles" t="Include">
           <e p="CharacterProfile.cs" t="Include" />
           <e p="UserProfile.cs" t="Include" />

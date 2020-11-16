@@ -1,8 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using RpgGame.DbContexts;
 using RpgGame.DTOs.Auth;
 using RpgGame.Helpers;
@@ -14,12 +19,35 @@ namespace RpgGame.Services
     public class AuthRepository : IAuthRepository, IDisposable
     {
         private readonly DataContext _context;
-        public AuthRepository(DataContext context)
+        private readonly IConfiguration _configuration;
+        public AuthRepository(DataContext context, IConfiguration configuration)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
+            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
-        
+        public string CreateToken(User user)
+        {
+            List<Claim> claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Name, user.Email),
+                new Claim(ClaimTypes.GivenName, user.FirstName)
+            };
+            SymmetricSecurityKey key =
+                new SymmetricSecurityKey(
+                    Encoding.UTF8.GetBytes(_configuration.GetSection("AppSettings:JWTSecret").Value));
+            SigningCredentials credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+            SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.Now.AddDays(3),
+                SigningCredentials = credentials
+            };
+            JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
+            SecurityToken token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
         
         public User Register(CreateUserDto newUser)
         {
@@ -64,7 +92,7 @@ namespace RpgGame.Services
 
             return new LoginDto()
             {
-                AccessToken = "Access",
+                AccessToken = CreateToken(user),
                 RefreshToken = "Refresh",
                 UserId = user.Id
             };
